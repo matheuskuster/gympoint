@@ -79,5 +79,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # env
-.env
+backend/.env
 
