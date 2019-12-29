@@ -15,7 +15,7 @@ class AnswerMail {
               <strong>${updatedOrder.question}</strong><br/>
               R: ${updatedOrder.answer}
               <br/><br/>
-              <small>Respondido em: ${updatedOrder.formatteDate}</small>
+              <small>Respondido em: ${updatedOrder.formattedDate}</small>
             </p>
       `,
     });
