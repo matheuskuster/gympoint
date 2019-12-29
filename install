@@ -5,13 +5,11 @@ import os
 
 
 def populateDatabase(dbName):
-    print('Por favor, crie uma tabela no banco de dados com "CREATE DATABASE {}"'.format(dbName))
-    input('Aperta qualquer tecla para continuar...')
-
     response = input(
-        'Deseja criar as tabelas e popular o banco de dados? [Y/n] ')
+        'Deseja criar o banco e as tabelas? [Y/n] ')
     if response == '' or response.lower() == 'y':
         os.chdir('./backend')
+        os.system('yarn sequelize db:create')
         os.system('yarn sequelize db:migrate')
         os.system('yarn sequelize db:seed:all')
         os.chdir('../')
