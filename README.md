@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 9: Gympoint, front-end web
+  Desafio Final: Front-end web e mobile + backend
 </h3>
 
 ## Sobre o projeto
