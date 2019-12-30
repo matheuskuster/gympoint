@@ -41,7 +41,7 @@ cd gympoint
 
 #### 2 - Variáveis de ambiente
 
-Altere o nome do arquivo `.env.example` do projeto <a href="https://github.com/matheuskuster/gympoint/blob/master/backend/.env.example">backend</a> para `.env` e insira as variáveis de ambiente de acordo com o seu ambiente.
+Altere o nome do arquivo `.env.example` do projeto <a href="https://github.com/matheuskuster/gympoint/blob/master/backend/.env.example">backend</a> para `.env` e insira as variáveis de ambiente de acordo com as suas preferência.
 
 ```
 APP_PORT=3333 # Porta de execução do backend
@@ -104,12 +104,12 @@ yarn dev
 ```
 
 ```
-yarn queue # Para que o envio de email funcione de forma correta
+yarn queue
 ```
 
 ##### Frontend
 
-Para executar o <a href="https://github.com/matheuskuster/gympoint/tree/master/frontend">frontend</a>, basta rodar o seguinte comando nas pasta:
+Para executar o <a href="https://github.com/matheuskuster/gympoint/tree/master/frontend">frontend</a>, basta rodar o seguinte comando na pasta:
 
 ```
 yarn start
