@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio Final: Front-end web e mobile + backend
+  Desafio Final Bootcamp Rocketseat
 </h3>
 
 ## Sobre o projeto
@@ -63,7 +63,7 @@ REDIS_PORT=6379 #
 
 ##### Observações importantes
 
-Caso escolha uma porta diferente da padrão (3333) durante no `.env`, favor alterá-la também nas <a href="https://github.com/matheuskuster/gympoint/blob/master/frontend/.env">variáveis de ambiente</a> do projeto frontend em <b>REACT_APP_API_PORT</b> e no arquivo de configuração da <a href="https://github.com/matheuskuster/gympoint/blob/master/mobile/src/services/api.js">api</a> no projeto mobile.
+Caso escolha uma porta diferente da padrão (3333) no `.env`, favor alterá-la também nas <a href="https://github.com/matheuskuster/gympoint/blob/master/frontend/.env">variáveis de ambiente</a> do projeto frontend em <b>REACT_APP_API_PORT</b> e no arquivo de configuração da <a href="https://github.com/matheuskuster/gympoint/blob/master/mobile/src/services/api.js">api</a> no projeto mobile.
 
 #### 3 - Docker
 
