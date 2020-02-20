@@ -1,146 +1,175 @@
 <h1 align="center">
-  <img alt="Gympoint" title="Gympoint" src=".github/logo.png" width="200px" />
+  <img alt="Gympoint" title="Gympoint" src=".github/Gympoint.png" width="200px" />
+
+Fullstack GymPoint
+
 </h1>
 
-<h3 align="center">
-  Desafio Final Bootcamp Rocketseat
-</h3>
+<h4 align="center">
+Gym management platform with Node.js, React and React Native
+</h4>
 
-## Sobre o projeto
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheuskuster/gostack-gympoint.svg">
 
-Este projeto foi desenvolvido durante o <a href="https://rocketseat.com.br/bootcamp">bootcamp</a> da Rocketseat. O intuito de sua criação é ser avaliado como desafio final do curso. O GymPoint consiste em um sistema de gestão de academia. O <a href="https://github.com/matheuskuster/gympoint/tree/master/frontend">frontend</a>, desenvolvido usando React, é utilizado pelo administrador da academia. O aplicativo <a href="https://github.com/matheuskuster/gympoint/tree/master/mobile">mobile</a>, desenvolvido usando React Native, é utilizado pelo cliente da academia.
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/count/matheuskuster/gostack-gympoint.svg">
 
-## Executar
+  <img alt="GitHub top language" src="https://img.shields.io/github/repo-size/matheuskuster/gostack-gympoint.svg">
 
-Abaixo se encontram as instruções para executar o GymPoint.
+  <a href="https://api.codacy.com/project/badge/Grade/6b03ed543d484ebd95335fd26235b077" target="_blank">
+    <img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/6b03ed543d484ebd95335fd26235b077">
+  </a>
 
-### Script
+  <img alt="GitHub top language" src="https://img.shields.io/github/last-commit/matheuskuster/gostack-gympoint.svg">
+</p>
 
-Para facilitar o processo de configuração do ambiente de desenvolvimento, foi criado um script de instalação. Para executá-lo basta ter <a href="https://www.python.org/downloads/">Python 3</a> instalado em sua máquina. Porém, vale ressaltar que foi testado apenas em ambientes Linux. Portanto, caso não tenha sucesso com o script, tente a instalação Manual logo abaixo.
+## :eyes: Visuals
 
-```
-git clone https://github.com/matheuskuster/gympoint.git
-cd gympoint
-./install
-```
+<p align="center">
+  <img alt="Web gif" src="https://media.giphy.com/media/gk9xDbS9eqHAVOkiWA/giphy.gif">
+  <br/>
+  <img alt="Mobile gif" src="https://media.giphy.com/media/ehJQ6pN5myVyTGoJ7S/giphy.gif">
+</p>
 
-#### Observações importantes
+## :rocket: Technologies
 
-Caso escolha uma porta diferente da padrão (3333) durante o script, favor alterá-la também nas <a href="https://github.com/matheuskuster/gympoint/blob/master/frontend/.env">variáveis de ambiente</a> do projeto frontend em <b>REACT_APP_API_PORT</b> e no arquivo de configuração da <a href="https://github.com/matheuskuster/gympoint/blob/master/mobile/src/services/api.js">api</a> no projeto mobile.
+This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
 
-### Manual
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [React Native](https://facebook.github.io/react-native/)
+- [Redux](https://redux.js.org/)
+- [React Navigation](https://reactnavigation.org/)
+- [Axios](https://github.com/axios/axios)
+- [Immer](https://github.com/immerjs/immer)
+- [Redux-Saga](https://redux-saga.js.org/)
+- [Express](https://expressjs.com/)
+- [nodemon](https://nodemon.io/)
+- [Sucrase](https://github.com/alangpierce/sucrase)
+- [Docker](https://www.docker.com/docker-community)
+- [Sequelize](http://docs.sequelizejs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [node-postgres](https://www.npmjs.com/package/pg)
+- [Redis](https://redis.io/)
+- [JWT](https://jwt.io/)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Yup](https://www.npmjs.com/package/yup)
+- [Bee Queue](https://www.npmjs.com/package/bcrypt)
+- [Nodemailer](https://nodemailer.com/about/)
+- [History](https://www.npmjs.com/package/history)
+- [date-fns](https://date-fns.org/)
+- [DotEnv](https://www.npmjs.com/package/dotenv)
+- [styled-components](https://www.styled-components.com/)
+- [Reactotron](https://infinite.red/reactotron)
+- [VS Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-#### 1 - Clonando o repositório
+## :information_source: How To Use
 
-Clone o repositório em seu computador:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher, [Yarn v1.13](https://yarnpkg.com/) or higher installed on your computer. From your command line:
 
-```
-git clone https://github.com/matheuskuster/gympoint.git
-cd gympoint
-```
+```bash
+# Clone this repository
+$ git clone https://github.com/matheuskuster/gostack-gympoint
 
-#### 2 - Variáveis de ambiente
-
-Altere o nome do arquivo `.env.example` do projeto <a href="https://github.com/matheuskuster/gympoint/blob/master/backend/.env.example">backend</a> para `.env` e insira as variáveis de ambiente de acordo com as suas preferência.
-
-```
-APP_PORT=3333 # Porta de execução do backend
-
-APP_SECRET=gympoint # Chave secreta da aplicação para realização de autenticação
-
-DB_HOST=localhost # Endereço do banco de dados
-DB_USER=postgres # Usuário do banco de dados
-DB_PASS=docker # Senha do banco de dados
-DB_NAME=gympoint # Nome do banco de dados
-
-MAIL_HOST=smtp.mailtrap.io # Endereço SMTP para envio de e-mail
-MAIL_USER= # Usuário do serviço de e-mail
-MAIL_PASS= # Senha do serviço de e-mail
-
-REDIS_HOST=127.0.0.1 # Endereço do banco Redis
-REDIS_PORT=6379 #
-```
-
-##### Observações importantes
-
-Caso escolha uma porta diferente da padrão (3333) no `.env`, favor alterá-la também nas <a href="https://github.com/matheuskuster/gympoint/blob/master/frontend/.env">variáveis de ambiente</a> do projeto frontend em <b>REACT_APP_API_PORT</b> e no arquivo de configuração da <a href="https://github.com/matheuskuster/gympoint/blob/master/mobile/src/services/api.js">api</a> no projeto mobile.
-
-#### 3 - Docker
-
-Caso os containers `postgres` e `redis` do <a href="https://www.docker.com/">docker</a> já estejam criados, pule o passo. Se não, execute seguintes comandos, alterando as variáveis de acordo com o passo acima:
-
-```
-  docker run --name redis -p {REDIS_PORT}:{REDIS_PORT} -d -t redis:alpine
-  docker run --name {DB_USER} -e POSTGRES_PASSWORD={DB_PASS} -p 5432:5432 -d postgres
-  docker start redis {DB_USER}
+# Go into the repository
+$ cd gostack-gympoint
 ```
 
-#### 4 - Dependências
+##### Enviroment Variables
 
-Navegue até as pastas <a href="https://github.com/matheuskuster/gympoint/tree/master/backend">backend</a>, <a href="https://github.com/matheuskuster/gympoint/tree/master/frontend">frontend</a>, <a href="https://github.com/matheuskuster/gympoint/tree/master/mobile">mobile</a> do projeto e rode o comando abaixo em cada uma delas:
+Rename `.env.example` file from <a href="https://github.com/matheuskuster/gostack-gympoint/blob/master/backend/.env.example">backend</a> to `.env` and replace the enviroment variables from your choice.
 
+```bash
+APP_PORT=3333 # Backend port
+
+APP_SECRET=gympoint # Secret key for authentication
+
+DB_HOST=localhost # Database host
+DB_USER=postgres # Database user
+DB_PASS=docker # Database password
+DB_NAME=gympoint # Database name
+
+MAIL_HOST=smtp.mailtrap.io # SMTP host for email service
+MAIL_USER= # Email service user
+MAIL_PASS= # Email service password
+
+REDIS_HOST=127.0.0.1 # Redis host
+REDIS_PORT=6379 # Redis port
 ```
-yarn
-```
 
-#### 5 - Banco de dados
+<details>
+<summary>Server - Node.js</summary>
+From your command line:
 
-Navegue até a pasta <a href="https://github.com/matheuskuster/gympoint/tree/master/backend">backend</a> do projeto e execute os seguintes comandos:
+```bash
+# Go into the backend folder
+cd backend
 
-```
+# Install dependencies
+yarn install
+
+# Create, migrate and seed database
 yarn sequelize db:create
 yarn sequelize db:migrate
 yarn sequelize db:seed:all
-```
 
-#### 6 - Executando
-
-##### Backend
-
-Para executar o <a href="https://github.com/matheuskuster/gympoint/tree/master/backend">backend</a>, basta rodar os seguintes comandos em duas abas diferentes do terminal na pasta:
-
-```
+# Run main server
 yarn dev
-```
 
-```
+# Run queue server
 yarn queue
 ```
 
-##### Frontend
+</details>
 
-Para executar o <a href="https://github.com/matheuskuster/gympoint/tree/master/frontend">frontend</a>, basta rodar o seguinte comando na pasta:
+<details>
+<summary>Web - ReactJS</summary>
+From your command line:
 
-```
+```bash
+# Go into the web folder
+cd web
+
+# Install dependencies
+yarn install
+
+# Run it
 yarn start
 ```
 
-##### Mobile
+</details>
 
-Na pasta <a href="https://github.com/matheuskuster/gympoint/tree/master/mobile">mobile</a>, execute o seguinte comando:
+<details>
+<summary>Mobile - React Native</summary>
+<b>Notice:</b> The mobile version was tested just in Android environment.
+I can't guarantee a properly behavior at iOS devices.
+<br/>
+<br/>
+<p>From your command line:</p>
 
+```bash
+# Go into the mobile folder
+cd mobile
+
+# Install dependencies
+yarn install
+
+# Start Metro Server
+react-native start
+
+# Run Android version
+react-native run-android
+
+# Run iOS version (XCode necessary)
+react-native run-ios
 ```
-yarn start
-# ou
-# react-native start
-```
 
-###### Android
+</details>
 
-Execute o emulador do Android. Após a iniciação do mesmo, execute o seguinte comando em outra aba do terminal na pasta <a href="https://github.com/matheuskuster/gympoint/tree/master/mobile">mobile</a>:
+## :memo: License
 
-```
-yarn android
-# ou
-# react-native run-android
-```
+This project is under the MIT license. See the [LICENSE](https://github.com/matheuskuster/gostack-gympoint/blob/master/LICENSE) for more information.
 
-###### iOS
+---
 
-<b>O projeto mobile foi testado apenas em ambiente Android.</b> Dessa forma, não garanto que funcione corretamente em ambiente iOS. Porém, para executá-lo, basta executar o seguinte comando na pasta <a href="https://github.com/matheuskuster/gympoint/tree/master/mobile">mobile</a>:
-
-```
-yarn ios
-# ou
-# react-native run-ios
-```
+Made with ♥ by Matheus Kuster :wave: [Get in touch!](https://www.linkedin.com/in/matheus-kuster/)
