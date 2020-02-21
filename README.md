@@ -10,17 +10,17 @@ Gym management platform with Node.js, React and React Native
 </h4>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheuskuster/gostack-gympoint.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/matheuskuster/gostack-gympoint-fullstack.svg">
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/count/matheuskuster/gostack-gympoint.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/count/matheuskuster/gostack-gympoint-fullstack.svg">
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/repo-size/matheuskuster/gostack-gympoint.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/repo-size/matheuskuster/gostack-gympoint-fullstack.svg">
 
   <a href="https://api.codacy.com/project/badge/Grade/6b03ed543d484ebd95335fd26235b077" target="_blank">
     <img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/6b03ed543d484ebd95335fd26235b077">
   </a>
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/last-commit/matheuskuster/gostack-gympoint.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/last-commit/matheuskuster/gostack-gympoint-fullstack.svg">
 </p>
 
 ## :eyes: Visuals
@@ -69,10 +69,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/matheuskuster/gostack-gympoint
+$ git clone https://github.com/matheuskuster/gostack-gympoint-fullstack
 
 # Go into the repository
-$ cd gostack-gympoint
+$ cd gostack-gympoint-fullstack
 ```
 
 ##### Enviroment Variables
@@ -168,7 +168,7 @@ react-native run-ios
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/matheuskuster/gostack-gympoint/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/matheuskuster/gostack-gympoint-fullstack/blob/master/LICENSE) for more information.
 
 ---
 
